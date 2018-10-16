@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Remind-Me App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Restu Julian</string>
+    <string name="nav_header_subtitle">restujulian07@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">Tentang</string>
+</resources>
