@@ -1,7 +1,7 @@
 # Remind-Me App
 Tugas "Pemrograman Java Mobile"
 
-##Dibuat oleh :
+## Dibuat oleh :
   * Restu Julian / NIM-165610057
 
 ### Aplikasi ini dibuat untuk memenuhi nilai tugas
@@ -12,5 +12,4 @@ Tugas "Pemrograman Java Mobile"
 
 
 (Mohon menyertakan sumber jika mengcopy file disini, karena ini merupakan tugas individu)
-
-## Review aplikasi terdapat pada directory review
+* Review aplikasi terdapat pada directory review
