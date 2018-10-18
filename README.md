@@ -4,9 +4,10 @@ Tugas "Pemrograman Java Mobile"
 ## Dibuat oleh :
   * Restu Julian / NIM-165610057
 
-### Aplikasi ini dibuat untuk memenuhi nilai tugas
-### Matakuliah "Pemrograman Java Mobile"
-### Diampu oleh dosen : Bpk. Pius Anggoro
+Aplikasi ini dibuat untuk memenuhi nilai tugas
+Matakuliah "Pemrograman Java Mobile"
+## Diampu oleh dosen : 
+ * Bpk. Pius Anggoro
 
 ## STMIK Akakom Yogyakarta
 
