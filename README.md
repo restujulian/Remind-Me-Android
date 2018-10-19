@@ -7,7 +7,7 @@ Tugas "Pemrograman Java Mobile"
 Aplikasi ini dibuat untuk memenuhi nilai tugas
 Matakuliah "Pemrograman Java Mobile"
 ## Diampu oleh dosen : 
- * Bpk. Pius Anggoro
+ * Bpk. Pius Anggoro, S.Si, M.Cs
 
 ## STMIK Akakom Yogyakarta
 
