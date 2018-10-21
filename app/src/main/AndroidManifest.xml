@@ -21,7 +21,10 @@
         </activity>
         <activity android:name=".AboutActivity" />
         <activity android:name=".CalendarActivity" />
-        <activity android:name=".AcaraActivity"></activity>
+        <activity android:name=".AcaraActivity" />
+        <activity android:name=".JadwalActivity" />
+        <activity android:name=".NotifikasiActivity" />
+        <activity android:name=".FormActivity"></activity>
     </application>
 
 </manifest>

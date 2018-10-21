@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            startActivity(new Intent(this, FormActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -87,6 +87,10 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, CalendarActivity.class));
         }else if (id == R.id.nav_acara) {
             startActivity(new Intent(this, AcaraActivity.class));
+        }else if (id == R.id.nav_jadwal) {
+            startActivity(new Intent(this, JadwalActivity.class));
+        }else if (id == R.id.nav_notifikasi) {
+            startActivity(new Intent(this, NotifikasiActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
