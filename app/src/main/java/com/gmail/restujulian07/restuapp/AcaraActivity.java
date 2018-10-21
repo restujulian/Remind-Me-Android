@@ -33,8 +33,10 @@ public class AcaraActivity extends AppCompatActivity {
 
     void addData(){
         AcaraArrayList = new ArrayList<>();
-        AcaraArrayList.add(new Acara("UAS", "Senin, 1 Januari 2018", "UAS adalah Ujian Akhit Semester"));
-        AcaraArrayList.add(new Acara("UTS", "Senin, 22 Oktober 2018", "UTS adalah Ujian Tengah Semester "));
+        AcaraArrayList.add(new Acara("Study Club Web Programming", "Sabtu, 15 Desember 2018", "Study Club dilaksanakan pada pukul 08:00am"));
+        AcaraArrayList.add(new Acara("Seminar Internet Marketing", "Senin, 10 Desember 2018", "Seminar dilaksanakan di kampus STMIK Akakom"));
+        AcaraArrayList.add(new Acara("Belajar Pemrograman Java Mobile", "Minggu, 9 Desember 2018", "Belajar Pemrograman Java Mobile"));
+        AcaraArrayList.add(new Acara("Rapat Anggota HMJSI", "Jum'at, 23 November 2018", "Rapat pembahasan proker"));
     }
 
 }
