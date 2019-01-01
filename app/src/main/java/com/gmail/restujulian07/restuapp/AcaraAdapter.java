@@ -1,47 +1,69 @@
 package com.gmail.restujulian07.restuapp;
-    import android.support.v7.widget.RecyclerView;
-    import android.view.LayoutInflater;
-    import android.view.View;
-    import android.view.ViewGroup;
-    import android.widget.TextView;
 
-    import java.util.ArrayList;
-public class AcaraAdapter extends RecyclerView.Adapter<AcaraAdapter.AcaraViewHolder> {
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
+import java.util.List;
 
-    private ArrayList<Acara> dataList;
+public class AcaraAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    private Context context;
+    private LayoutInflater inflater;
+    private List<DataAcara> data;
 
-    public AcaraAdapter(ArrayList<Acara> dataList) {
-        this.dataList = dataList;
+    AcaraAdapter(Context context, List<DataAcara> data){
+        this.context=context;
+        inflater= LayoutInflater.from(context);
+        this.data=data;
+    }
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view=inflater.inflate(R.layout.row_acara, parent,false);
+        MyHolder holder;
+        holder = new MyHolder(view);
+        return holder;
     }
 
     @Override
-    public AcaraViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.row_acara, parent, false);
-        return new AcaraViewHolder(view);
-    }
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        MyHolder myHolder= (MyHolder) holder;
+        DataAcara current=data.get(position);
+        myHolder.textJudul.setText(current.namaAcara);
+        myHolder.textTanggal.setText(current.tglPosting);
+        myHolder.textDeskripsi.setText(current.deskripsiAcara);
 
-    @Override
-    public void onBindViewHolder(AcaraViewHolder holder, int position) {
-        holder.txtNama.setText(dataList.get(position).getNama());
-        holder.txtTgl.setText(dataList.get(position).getTgl());
-        holder.txtKet.setText(dataList.get(position).getKet());
+        Glide.with(context)
+                .load("https://gbiirenonprojek.000webhostapp.com/wservice/images/" + current.gambarAcara)
+                .apply(new RequestOptions().placeholder(R.drawable.movie).error(R.drawable.movie))
+                .into(myHolder.ivAcara);
     }
 
     @Override
     public int getItemCount() {
-        return (dataList != null) ? dataList.size() : 0;
+        return data.size();
     }
 
-    public class AcaraViewHolder extends RecyclerView.ViewHolder{
-        private TextView txtNama, txtTgl, txtKet;
+    class MyHolder extends RecyclerView.ViewHolder{
+        TextView textJudul;
+        ImageView ivAcara;
+        TextView textTanggal;
+        TextView textDeskripsi;
 
-        public AcaraViewHolder(View itemView) {
+        MyHolder(View itemView) {
             super(itemView);
-            txtNama = (TextView) itemView.findViewById(R.id.txt_nama);
-            txtTgl = (TextView) itemView.findViewById(R.id.txt_tgl);
-            txtKet = (TextView) itemView.findViewById(R.id.txt_ket);
+            textJudul= itemView.findViewById(R.id.judul);
+            ivAcara= itemView.findViewById(R.id.imageView2);
+            textTanggal = itemView.findViewById(R.id.tanggal);
+            textDeskripsi = itemView.findViewById(R.id.deskripsi);
         }
     }
 }
