@@ -15,12 +15,20 @@ Matakuliah "Pemrograman Java Mobile"
 (Mohon menyertakan sumber jika mengcopy file disini, karena ini merupakan tugas individu)
 * Review aplikasi terdapat pada directory review
 
-#Hasil
-![Output](./hasil1.jpeg)
-![Output](./hasil2.jpeg)
-![Output](./hasil3.jpeg)
-![Output](./hasil4.jpeg)
-![Output](./hasil5.jpeg)
-![Output](./hasil6.jpeg)
-![Output](./hasil7.jpeg)
+# Hasil
+## Tampilan Awal (MainActivity)
 ![Output](./hasil8.jpeg)
+## Tab Kalender
+![Output](./hasil7.jpeg)
+## Tab Acara (Menggunakan Service : http://gbiirenonproject.000webhostapp.com/wservice/)
+![Output](./hasil6.jpeg)
+## Tab Jadwal
+![Output](./hasil5.jpeg)
+## Tab Notifikasi
+![Output](./hasil4.jpeg)
+## Sidebar
+![Output](./hasil3.jpeg)
+## Form
+![Output](./hasil2.jpeg)
+## About
+![Output](./hasil1.jpeg)
