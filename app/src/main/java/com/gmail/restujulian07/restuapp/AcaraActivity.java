@@ -48,7 +48,7 @@ public class AcaraActivity extends AppCompatActivity {
             try {
                 //url = new URL("http://localhost/wservice/film.json");
                 //url = new URL("https://gbiirenonprojek.000webhostapp.com/wservice/film.json");
-                url = new URL("https://gbiirenonprojek.000webhostapp.com/wservice/acara.json");
+                url = new URL("http://gbiirenonprojek.000webhostapp.com/wservice/acara.json");
             } catch (MalformedURLException e) {
                 e.printStackTrace();
                 return e.toString();
